@@ -1,0 +1,115 @@
+html, body {
+    color: #121212;
+    height: 80%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    margin: 1.25em;
+    max-width: 520px;
+}
+
+#return {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 4px;
+    color: #999;
+}
+
+#external-link:hover {
+    color: crimson;
+}
+
+#return:hover {
+    text-decoration: underline;
+    color: #999;
+}
+
+.container {
+    margin: 40px 10px;
+    height: 60%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 10px;
+}
+
+.container > div {
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.landscape {
+    grid-column: span 2;
+}
+
+
+.container > div:nth-child(1) {
+    color: white;
+    background-color: #6a62d3;
+    border-radius: 48px 0.75em 0.75em 0.75em;
+}
+
+.container > div:nth-child(2) {
+    background-color: #e3e1fb;
+    border-radius: 0.75em 48px 0.75em 0.75em;
+}
+
+.container > div:nth-child(3) {
+    background-color: #daece9;
+    border-radius: 48px 0.75em 0.75em 0.75em;
+}
+
+.container > div:nth-child(4) {
+    background-color: #fee0bd;
+    border-radius: 0.75em 0.75em 0.75em 0.75em;
+}
+
+.container > div:nth-child(5) {
+    background-color: #fad8d8;
+    border-radius: 0.75em 0.75em 0.75em 0.75em;
+}
+
+.container > div:nth-child(6) {
+    background-color: #bfdbdd;
+    border-radius: 0.75em 0.75em 48px 0.75em;
+}
+
+
+/* Mobile & Tablet - Width <= 520px */
+@media screen and (max-width: 520px) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    }
+
+    .container > div {
+        padding: 1rem;
+    }
+
+    .container > div:nth-child(1) {
+        border-radius: 32px 0.5em 0.5em 0.5em;
+    }
+
+    .container > div:nth-child(2) {
+        border-radius: 0.5em 0.5em 32px 0.5em;
+    }
+
+    .container > div:nth-child(3) {
+        border-radius: 0.5em 0.5em 0.5em 32px;
+    }
+
+    .container > div:nth-child(4) {
+        border-radius: 0.5em 32px 0.5em 0.5em;
+    }
+
+    .container > div:nth-child(5) {
+        border-radius: 32px 0.5em 0.5em 0.5em;
+    }
+
+    .container > div:nth-child(6) {
+        border-radius: 0.5em 32px 0.5em 0.5em;
+    }
+}
