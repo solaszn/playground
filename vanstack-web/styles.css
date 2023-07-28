@@ -2,10 +2,14 @@ html, body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* NAVIGATION */
 .nav {
-    margin: 40px 20px;
+    margin: 24px 20px;
     padding: 8px;
     max-width: 1080px;
     display: grid;
@@ -60,7 +64,257 @@ html, body {
     height: fit-content;
 }
 
+.button:hover {
+    opacity: 0.88;
+}
+
 .button-secondary {
     color: #12121285;
     border: none;
+}
+
+
+/* HERO */
+.hero {
+    margin-top: 60px;
+    max-width: 1080px;
+}
+
+h1 {
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+p {
+    line-height: 180%;
+}
+
+#make-it-pop {
+    background: linear-gradient(to right, #7FB0F9, #EA99EC, #EFA68F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero-copy > p {
+    max-width: 740px;
+}
+
+.primary-cta {
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.button-primary {
+    padding: 14px 20px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    background-color: #121212;
+}
+
+.img-dashboard {
+    max-width: 1080px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 20px 6px rgba(0, 0, 0, 0.04);
+}
+
+
+/* PRODUCT */
+.features {
+    max-width: 1080px;
+    margin: 80px 0;
+}
+
+.section-tag {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.section-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-intro > h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+#shrink-h2 {
+    max-width: 488px;
+}
+
+.section-intro > p {
+    max-width: 632px;
+}
+
+.features-content {
+    max-width: 960px;
+    display: flex;
+    gap: 90px;
+    margin: 80px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.switch {
+    flex-direction: row-reverse;
+}
+
+.feature-copy {
+    padding: 8px;
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+}
+
+.feature-copy > h3 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.feature-copy > p {
+    max-width: 380px;
+}
+
+.highlight > img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+
+
+/* PRICING */
+.pricing {
+    width: 100vw;
+    padding: 60px 0;
+    background: #FFF8F5;
+}
+
+.pricing-header {
+    margin: 20px 0;
+}
+
+.relative > svg {
+    position: absolute;
+    margin: 6px 16px;
+}
+
+.pricing-container {
+    margin: 32px auto;
+    padding: 80px;
+    max-width: 960px;
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 300px;
+    height: fit-content;
+    gap: 32px;
+    padding: 48px 36px;
+    border-radius: 8px;
+    border: 1px solid #D4D4D4;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.card-info > img {
+    width: 124px;
+}
+
+.text {
+    text-align: left;
+}
+
+.text > h2 {
+    margin: 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.price-card > a {
+    width: -webkit-fill-available;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 4px;
+}
+
+.price-card > ul > li {
+    display: flex;
+    gap: 18px;
+    line-height: 180%;
+    text-align: left;
+}
+
+li > svg {
+    margin-top: 3px;
+    min-width: 24px;
+}
+
+.w-caption {
+    display: flex;
+    gap: 12px;
+    align-items: end;
+}
+
+.caption {
+    color: #777;
+    margin-bottom: 4px;
+}
+
+#pro {
+    background: linear-gradient(#FFF8F5, #FFF8F5) padding-box, linear-gradient(to right, #FFD294, #FF96BC) border-box;
+    border: 2px solid transparent;
+}
+
+
+/* CLOSING & FOOTER */
+.closing-cta {
+    margin: 20px 0;
+    padding: 60px;
+}
+
+#shrink-p {
+    max-width: 620px;
 }
