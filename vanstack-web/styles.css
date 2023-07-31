@@ -421,3 +421,138 @@ li > svg {
     font-size: 14px;
     font-weight: 400;
 }
+
+
+
+/* MOBILE */
+@media screen and (max-width: 520px) {
+    /* --- */
+    .nav {
+        max-width: 88vw;
+        margin: 0px;
+    }
+    
+    .nav-links, .nav-actions {
+        display: none;
+    }
+
+    .logo > img {
+        height: 24px;
+    }
+
+    .hero {
+        padding: 20px 24px;
+    }
+
+    .hero-copy {
+        gap: 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: -0.85px;
+    }
+
+    .img-dashboard {
+        margin: 20px 0;
+        width: 84vw;
+    }
+
+    /* --- */
+    .features {
+        max-width: 84vw;
+    }
+
+    #shrink-h2 {
+        max-width: 84vw;
+    }
+
+    .section-intro > h2 {
+        font-size: 30px;
+    }
+
+    .section-intro > p {
+        max-width: 84vw;
+    }
+
+    .features-content {
+        margin: 20px;
+        max-width: 84vw;
+        gap: 60px;
+    }
+
+    .highlight {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .feature-copy {
+        max-width: 84vw;
+    }
+
+    .feature-copy > h3 {
+        font-size: 24px;
+    }
+
+    .img-feature {
+        max-width: 84vw;
+    }
+
+
+    /* --- */
+    .pricing {
+        padding: 40px 0px;
+    }
+
+    .pricing-header {
+        padding: 0 74px;
+    }
+
+    .relative > svg {
+        margin: 8px;
+        height: 70px;
+    }
+
+    .pricing-container {
+        margin-top: 80px;
+        padding: 0px;
+        max-width: 84vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-card {
+        max-width: 84vw;
+        min-width: 240px;
+        padding: 24px 16px;
+    }
+
+
+    /* --- */
+    .closing-cta {
+        padding: 20px 32px;
+    }
+
+    .footer {
+        max-width: inherit;
+        padding: 12px;
+    }
+
+    .top {
+        gap: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-info {
+        margin-left: 18px;
+        max-width: 80%;
+    }
+    .page-links {
+        justify-content: start;
+        gap: 60px;
+        max-width: 80%;
+        margin: 24px;
+    }
+
+}
