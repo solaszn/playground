@@ -580,6 +580,156 @@ li > svg {
 
 
 /* TABLET */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) and (min-width: 521px) {
+    /* --- */
+    .nav {
+        max-width: 88vw;
+        margin: 12px 8px;
+        align-items: center;
+    }
     
+    .nav-links {
+        display: none;
+    }
+
+    .logo > img {
+        height: 26px;
+    }
+
+    .hero {
+        max-width: 86vw;
+        padding: 20px 24px;
+        margin-top: 48px;
+    }
+
+    .hero-copy {
+        gap: 24px;
+    }
+
+    h1 {
+        font-size: 60px;
+        letter-spacing: -0.85px;
+    }
+
+    .img-dashboard {
+        margin: 20px 0;
+        width: 84vw;
+    }
+
+    /* --- */
+    .features {
+        max-width: 84vw;
+    }
+
+    .intro {
+        max-width: 82%;
+        margin: 0px auto;
+    }
+
+    .section-intro > h2 {
+        font-size: 40px;
+    }
+
+    .features-content {
+        margin: 20px;
+        gap: 60px;
+    }
+
+    .highlight {
+        flex-direction: column;
+        gap: 32px;
+        width: 82%;
+    }
+
+    .feature-copy {
+        max-width: 84vw;
+    }
+
+    .feature-copy > h3 {
+        font-size: 30px;
+    }
+
+    .feature-copy > p {
+        max-width: 100%;
+    }
+
+    .highlight > img {
+        width: 100%;
+    }
+
+
+    /* --- */
+    .pricing {
+        padding: 40px 0px;
+    }
+
+    .pricing-header {
+        padding: 0 74px;
+    }
+
+    .relative > svg {
+        margin: 8px;
+        height: 70px;
+    }
+
+    .pricing-container {
+        margin-top: 80px;
+        padding: 0px;
+        max-width: 84vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .price-card {
+        max-width: 300px;
+        min-width: 240px;
+        padding: 32px 20px;
+        gap: 24px;
+    }
+
+    .text > h2 {
+        font-size: 36px;
+    }
+
+    .caption {
+        margin-bottom: 0;
+    }
+
+
+    /* --- */
+    .closing-cta {
+        padding: 20px 32px;
+    }
+
+    #shrink-p {
+        max-width: 90%;
+    }
+
+    .footer {
+        max-width: inherit;
+        padding: 12px;
+    }
+
+    .top {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-info {
+        margin-left: 18px;
+        max-width: 80%;
+    }
+    .page-links {
+        justify-content: start;
+        gap: 16vw;
+        max-width: 80%;
+        margin: 24px;
+    }
+
+    .bottom {
+        width: 84vw;
+        margin: 40px auto 20px auto; /* TRBL */
+    }
 }
