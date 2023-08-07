@@ -79,13 +79,14 @@ html, body {
     position: absolute;
     /* border: 1px solid red; */
     width: 100vw;
+    max-width: 2400px;
     height: 64vh;
     z-index: -1;
     background: linear-gradient(0deg, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 0.88) 100%), url("imgs/texture.jpg"), white 50% / cover no-repeat;
     filter: blur(60px);
 }
 
-.bg-shape {
+/* .bg-shape {
     width: 24vw;
     height: 24vw;
     max-width: 300px;
@@ -94,15 +95,15 @@ html, body {
     margin: -8px;
     border-radius: 50%;
     opacity: 0.75;
-}
+} */
 
-.group {
-    /* border: 1px solid red; */
+/* .group {
+    border: 1px solid red;
     rotate: 30deg;
     width: 60vw;
     display: grid;
     grid-template: auto / repeat(8, 1fr);
-}
+} */
 
 #accent-1 {
     background-color: #FED6D9;
@@ -112,18 +113,6 @@ html, body {
 #accent-2 {
     background-color: #FEF1DF;
     grid-column: 2;
-}
-
-.top-left {
-    position: relative;
-    top: 36%;
-    left: -12%;
-}
-
-.bottom-right {
-    position: relative;
-    top: 32%;
-    left: 64%;
 }
 
 
