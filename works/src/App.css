@@ -33,6 +33,10 @@ code {
   transition-duration: 1000ms;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Carousel */
 .zu0vm9576q {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000000 100%);
