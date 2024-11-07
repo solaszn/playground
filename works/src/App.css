@@ -16,3 +16,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Default transition */
+.transition-any {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Overriding classes */
+.smooth {
+  transition-duration: 500ms;
+}
+
+.slow {
+  transition-duration: 1000ms;
+}

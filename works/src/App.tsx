@@ -8,9 +8,9 @@ function App({children}:{
   children: React.ReactNode
 }) {
   return (
-    <div className="App">
+    <div className="App bg-neutral-100 max-w-[2400px] mx-auto">
 
-      <div className="grid grid-rows-[32px_1fr_32px] gap-10 bg-neutral-100 max-w-[1600px] mx-auto px-[60px] py-10 h-screen font-inter">
+      <div className="grid grid-rows-[32px_1fr_32px] gap-10 max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-[60px] py-10 h-screen font-inter transition-any smooth">
         
         {/* Heading */}
         <div className="flex justify-between h-8 text-sm">
@@ -21,15 +21,17 @@ function App({children}:{
 
           <div className="flex gap-5">
           <div className="flex gap-1.5 px-3 py-1 border border-neutral-200 rounded-md bg-white items-center">9:14 AM</div>
-          <div className="flex gap-1.5 px-3 py-1 border border-neutral-200 rounded-md bg-white items-center"><LuCloudSun size={18}/> Lagos</div>
+          <div className="hidden sm:flex gap-1.5 px-3 py-1 border border-neutral-200 rounded-md bg-white items-center"><LuCloudSun size={18}/> Lagos</div>
           </div>
         </div>
 
         {/* Canvas */}
-        <div className="flex h-full border border-neutral-200 bg-white rounded-lg"></div>
+        <div className="flex h-full justify-center border border-neutral-200 bg-white rounded-lg">
+          {children}
+        </div>
 
         {/* Footer */}
-        <div className="h-8 text-sm flex justify-between text-neutral-500">
+        <div className="h-8 text-sm flex flex-col lg:flex-row gap-y-3 justify-between text-neutral-500">
           <div>An exploration by Feyisola Olawuyi</div>
           <div>Last updated 2 days ago</div>
         </div>
