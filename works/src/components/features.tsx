@@ -43,7 +43,7 @@ const Features = () => {
         ))}
       </TabList>
       <TabPanels className="w-full mt-10 ">
-        <div className="aspect-[4/5] sm:aspect-video bg-gray-100 w-full md:w-10/12 max-w-screen-lg mx-auto min-h-[300px] max-h-[520px] rounded-2xl overflow-clip relative">
+        <div className="aspect-[4/5] sm:aspect-video bg-gray-100 w-full md:w-10/12 max-w-screen-lg mx-auto min-h-[300px] max-h-[520px] rounded-2xl transition-any smooth overflow-clip relative">
           <div className="relative zu0vm9576q w-full h-full flex items-end z-20 p-4 lg:p-10">
             <div className="flex flex-col gap-2 w-full sm:w-10/12 lg:w-8/12">
               <div className="text-xl md:text-2xl font-semibold text-white">{tabs[activeTab].title}</div>

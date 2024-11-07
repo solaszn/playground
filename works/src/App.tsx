@@ -101,9 +101,8 @@ function App({ children }: {
 
   useEffect(() => {
     fetchClientIp();
-    console.log("🚨")
-    console.log(weather.ip)
-    console.log(process.env.REACT_APP_OPENWEATHERMAP_API_KEY)
+    const intervalId = setInterval(fetchClientIp, 600000);
+    return () => clearInterval(intervalId)
   }, []);
 
   return (
